@@ -42,7 +42,7 @@ else:
         st.session_state.secret = random.randint(low, high)
 #error 6
 if "attempts" not in st.session_state:
-    st.session_state.attempts = 0
+    st.session_state.attempts = 0 #set this to 0 so that the game will decrement correctly
 
 if "score" not in st.session_state:
     st.session_state.score = 0
@@ -82,7 +82,7 @@ with col1:
 with col2:
     show_hint = st.checkbox("Show hint", value=True)
 
-#explain this. how can you verify that the new game button works? aren't you supposed to set it to something? and why isn't "attempts left" set to the first value of which this game is played?
+#fix: update status so it can re-run properly
 if new_game:
     st.session_state.attempts = 0
     st.session_state.secret = random.randint(low, high)
