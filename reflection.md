@@ -8,6 +8,13 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 - List at least two concrete bugs you noticed at the start  
   (for example: "the hints were backwards").
 
+  - Bug 1: hints were backwards: when I type 10 it said lower, though the answer should be 42
+  - Bug 2: Attempts were unsynchronized/not synchronized properly
+  - Bug 3: The answer already revealed itself
+  - Bug 4: Only add the previous guess into history after the second guess and after
+  - Bug 5: Not renewing the game properly
+  - Bug 6: When I switch into Easy (range 1-20), Hard (range 1-50) the secret is out of scope (99)
+
 ---
 
 ## 2. How did you use AI as a teammate?
@@ -18,6 +25,10 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 
 ---
 
+- I use Copilot exclusively
+- One correct instance could be when it tried to fix the Higher/Lower syntax. I tested it by inputing a number and the output was correct.
+- One incorrect instance is when Copilot failed to detect why the new game button doesn't work properly. It suggested fixing the "secret" section of code (#error 6) but I found out it's because the new_game button has an issue.
+
 ## 3. Debugging and testing your fixes
 
 - How did you decide whether a bug was really fixed?
@@ -26,12 +37,16 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 - Did AI help you design or understand any tests? How?
 
 ---
+- By running the command line again
+- One test I ran was using a number outside of accepted scope, and before it didn't work properly but now it has.
+- Not really. I do them myself.
 
 ## 4. What did you learn about Streamlit and state?
 
 - How would you explain Streamlit "reruns" and session state to a friend who has never used Streamlit?
 
 ---
+- 
 
 ## 5. Looking ahead: your developer habits
 
@@ -39,3 +54,4 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
   - This could be a testing habit, a prompting strategy, or a way you used Git.
 - What is one thing you would do differently next time you work with AI on a coding task?
 - In one or two sentences, describe how this project changed the way you think about AI generated code.
+
