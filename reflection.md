@@ -46,7 +46,8 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 - How would you explain Streamlit "reruns" and session state to a friend who has never used Streamlit?
 
 ---
-- 
+- Streamlit reruns your entire Python script from top to bottom.
+- Session State is a sticky note on the side of the easel that the artist doesn't throw away.
 
 ## 5. Looking ahead: your developer habits
 
@@ -55,3 +56,6 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 - What is one thing you would do differently next time you work with AI on a coding task?
 - In one or two sentences, describe how this project changed the way you think about AI generated code.
 
+- One habit is to look at the code more carefully before utilizing AI
+- I will read all the code first before asking Copilot as that will safe more time
+- AI code often contains major bugs. We as developers must learn how to understand and fix them properly
